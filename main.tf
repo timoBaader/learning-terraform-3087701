@@ -47,6 +47,9 @@ module "autoscaling" {
 
   image_id                 = data.aws_ami.app_ami.id
   instance_type       = var.instance_type
+
+  #comment out for learning
+  desired_capacity = 0
 }
 
 module "blog_alb" {
